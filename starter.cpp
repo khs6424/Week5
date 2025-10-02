@@ -78,7 +78,7 @@ int main()
     using OOPCourse::Math::add_and_log;
 
     // TODO: Call 'add_and_log(15, 27)' and print the result.
-    add_and_log(15, 27);
+    std::cout << add_and_log(15, 27);
 
     return 0;
 }

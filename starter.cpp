@@ -5,6 +5,14 @@
 // For Exercise 2,
 // TODO: Define the OOPCourse::Math namespace structure and
 //       the internal anonymous namespace here.
+namespace
+{
+    void log_calculation(int result)
+    {
+        std::cout << "LOG: Calculation performed, result is " << result << "\n";
+    }
+}
+
 namespace OOPCourse::Math
 {
     int add_and_log(int a, int b)
@@ -12,14 +20,6 @@ namespace OOPCourse::Math
         int result = a + b;
         log_calculation(result);
         return result;
-    }
-}
-
-namespace
-{
-    void log_calculation(int result)
-    {
-        std::cout << "LOG: Calculation performed, result is " << result << "\n";
     }
 }
 // =========================================================
